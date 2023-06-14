@@ -1,0 +1,22 @@
+<htnl>
+    <head>
+        <title>Getting Started</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+    <div>
+        <form method="post">
+            <input type="text" name="text" placeholder="Введите сообщение" />
+            <input type="text">
+        </form>
+    </div>
+    <div>Список сообщеений</div>
+    {{#messages}}
+        <div>
+            <b>{{id}}</b>
+            <span>{{text}}</span>
+            <i>{{tag}}</i>
+        </div>
+    {{/messages}}
+    </body>
+</htnl>
